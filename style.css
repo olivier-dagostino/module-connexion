@@ -1,0 +1,170 @@
+/*Header*/
+header{
+    background-image: url(https://media.istockphoto.com/photos/farm-coffee-plantation-in-brazil-picture-id938716300?k=20&m=938716300&s=612x612&w=0&h=AqwZeHtc5iY5RwCUJrZbWbws_ZmyHha7FzzrhoWXrak=);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+#container{
+    width:400px;
+    margin:0 auto;
+    margin-top:10%;
+}
+/* Bordered form */
+form {
+    width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#container h1{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+input[type=submit] {
+    background-color: #4bbeb8;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: #53af57;
+    border: 1px solid #53af57;
+}
+
+/* Nav */
+
+nav 
+{
+    margin: 100px auto;
+    width: 50%;
+    height: 100px;
+    background: #48435C;
+}
+ 
+nav .main_pages 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ 
+nav .main_pages a 
+{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+ 
+nav a:hover 
+{
+    background: #5A5766
+}
+
+label
+{
+    display: none;
+}
+ 
+@media all and (max-width: 991px)
+{
+    nav
+    {
+        height: 60px;
+    }
+ 
+    nav .main_pages 
+    {
+        display: none;
+    }
+ 
+    label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.logoleafcoffee
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#logoleafcoffee
+{
+    height: 300px;
+    width: 300px;
+    padding: 60px;
+    border-radius: 10% 10% 10% 10%;
+}
+
+form
+{
+    width: 60%;
+    height: auto;
+}
+
+.container 
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Main*/
+
+.paragraphe
+{
+text-align: center;
+
+}
+
+.container_img 
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#img1
+{
+height: 300px;
+}
+
+#img2
+{
+    height: 300px;
+}
+
+#img3
+{
+    height: 300px;
+}
