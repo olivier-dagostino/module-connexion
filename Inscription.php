@@ -35,15 +35,18 @@ if (isset($_POST['env']))
   </head>
   <body>
   <?php require'header.php';?>
+  <div class="form-inscription">
     <form action="" method="post">
-      <input name="login" type="text" placeholder="username"  />
-        <input name="prenom" type="text" placeholder="prenom" />
-        <input name="nom" type="text" placeholder="nom" />
-        <input name="password" type="password" placeholder="Ton mdp"/>
-        <input name="conf" type="password" placeholder="remarque bouffon" />
-      <input name="env" type="submit" placeholder="clic batard">
-      <p class="message">T'as un compte 😮 ? Par ici bebou <a href="connexion.php">inscription</a></p>
+      <h1><center>Formulaire d'Inscription</center></h1>
+      <input name="login" type="text" placeholder="Nom d'Utilisateur"  />
+        <input name="prenom" type="text" placeholder="Prenom" />
+        <input name="nom" type="text" placeholder="Nom" />
+        <input name="password" type="password" placeholder="Mot de Passe"/>
+        <input name="conf" type="password" placeholder="Confirmer Votre Mot de Passe" />
+      <input name="env" type="submit" placeholder="soumettre">
+      <p class="message">Vous avez déjà un compte ?   😮    <a href="connexion.php">Par ici</a></p>
     </form>
+</div>  
 
 
   </body>

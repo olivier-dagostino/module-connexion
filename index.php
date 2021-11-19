@@ -5,7 +5,7 @@
         <h1><center>Bienvenue sur mon Site</center></h1><br><br>
         <div class="paragraphe">
             <p>
-                Ici vous pourrez partager vos idées, envies, conseils, avec une communauté de passionnés.<br><br>
+                Ici vous pourrez partager vos idées, envies, conseils, avec une communauté de passionnées.<br><br>
 
 
                 N'hésitez pas survoler le site, vous avez la possibilité de vous créer,<br>
@@ -24,5 +24,5 @@
             </div>
         </div>
     </main>
-</body>
-</html>
+
+    <?php require'footer.php';?>
