@@ -34,6 +34,7 @@ if (isset($_POST['env']))
       <title>site</title>
   </head>
   <body>
+    
   <?php require'header.php';?>
   <div class="form-inscription">
     <form action="" method="post">

@@ -21,9 +21,9 @@ if(isset($_POST['login']) && isset($_POST['password'])){ // SI c'est deux $Post 
                 header ("refresh:4;url=admin.php"); // alors je renvois vers admin.php
 
             }else {
-                echo $res[0][2] .'Veuillez patienter, vous allez être redirigé vers votre espace'; // Sinon bienvenue dans votre espace
+                echo $res[0][2] .' Veuillez patienter, vous allez être redirigé vers votre espace'; // Sinon bienvenue dans votre espace
                 $_SESSION["id"] = $res[0][0];
-                header ("refresh:4;url=profil.php");
+                header ("refresh:1;url=profil.php");
 
 
             }
