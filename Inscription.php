@@ -1,5 +1,5 @@
 <?php
-$connect= mysqli_connect("localhost","root","root","moduleconnexion");
+$connect= mysqli_connect("localhost:3306","olivier","moduleconnexion","olivier-d-agostino_moduleconnexion");
 
 
 if (isset($_POST['env']))
