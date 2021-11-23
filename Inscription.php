@@ -39,12 +39,12 @@ if (isset($_POST['env']))
   <div class="form-inscription">
     <form action="" method="post">
       <h1><center>Formulaire d'Inscription</center></h1>
-      <input name="login" type="text" placeholder="Nom d'Utilisateur"  />
-        <input name="prenom" type="text" placeholder="Prenom" />
-        <input name="nom" type="text" placeholder="Nom" />
-        <input name="password" type="password" placeholder="Mot de Passe"/>
-        <input name="conf" type="password" placeholder="Confirmer Votre Mot de Passe" />
-      <input name="env" type="submit" placeholder="soumettre">
+      <input style="font-family: 'Indie Flower', cursive;" name="login" type="text" placeholder="Nom d'Utilisateur"  />
+        <input style="font-family: 'Indie Flower', cursive;" name="prenom" type="text" placeholder="Prenom" />
+        <input style="font-family: 'Indie Flower', cursive;" name="nom" type="text" placeholder="Nom" />
+        <input style="font-family: 'Indie Flower', cursive;" name="password" type="password" placeholder="Mot de Passe"/>
+        <input style="font-family: 'Indie Flower', cursive;" name="conf" type="password" placeholder="Confirmer Votre Mot de Passe" />
+      <input style="font-family: 'Indie Flower', cursive;" name="env" type="submit" placeholder="soumettre">
       <p class="message">Vous avez déjà un compte ?   😮    <a href="connexion.php">Par ici</a></p>
     </form>
 </div>  

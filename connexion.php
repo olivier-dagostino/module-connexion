@@ -48,9 +48,9 @@ if(isset($_POST['login']) && isset($_POST['password'])){ // SI c'est deux $Post 
 <div class="formu">
 <form method="post" action="">
     <h1><center>Connexion</center></h1>
-    <input name="login" type="text" placeholder="Nom d'Utilisateur"required />
-    <input name="password" type="password" placeholder="Mot de Passe" requried />
-        <input type=submit value="Envoyer" name="env">
+    <input style="font-family: 'Indie Flower', cursive;" name="login" type="text" placeholder="Nom d'Utilisateur"required />
+    <input style="font-family: 'Indie Flower', cursive;" name="password" type="password" placeholder="Mot de Passe" requried />
+        <input style="font-family: 'Indie Flower', cursive;" type=submit value="Envoyer" name="env">
         <p class="message"><a href="inscription.php">Pas encore Inscrit ?</a></p>
         <div>
 </body>
