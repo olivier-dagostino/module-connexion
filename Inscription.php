@@ -19,15 +19,19 @@ if (isset($_POST['env']))
     } else {echo 'Confirmer votre MDP';}
 
   } else {echo 'Tous les champs doivent être remplis';}
-  
-} 
 
+}
 ?>
 
   <?php require'header.php';?>
   
   <div class="form-inscription">
     <form action="" method="post">
+    <?php 
+      if (!empty($nom) && !empty($prenom) && !empty($password) && !empty($login)) {
+      if ($password == $conf) { 
+      echo 'Compte créé';
+      }}?>
       <h1><center>Formulaire d'Inscription</center></h1>
       <input style="font-family: 'Indie Flower', cursive;" name="login" type="text" placeholder="Nom d'Utilisateur"  />
         <input style="font-family: 'Indie Flower', cursive;" name="prenom" type="text" placeholder="Prenom" />
