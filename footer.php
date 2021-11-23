@@ -15,8 +15,8 @@
                         <label for="email" class="mb-3"><b>
                             <p class="pfooter1"></p>
                             </b></label>
-                        <input type="email" class="form-control form-control-lg" placeholder="Entrer votre e-mail" id="email">
-                        <button type="button" class="btn btn-primary btn-lg btn-block my-2 Subscribe mt-4 mb-3">Envoyer</button>
+                        <input style="font-family: 'Indie Flower', cursive;" type="email" class="form-control form-control-lg" placeholder="Entrer votre e-mail" id="email">
+                        <button style="font-family: 'Indie Flower', cursive;" type="button" class="btn btn-primary btn-lg btn-block my-2 Subscribe mt-4 mb-3">Envoyer</button>
                     </div>
 
                     <div class="footer1">
