@@ -14,6 +14,7 @@
             <div class="main_pages">
                 <a href="index.php">Accueil</a>
                 <a href="connexion.php">Espace Membre</a>
+                <a href="forum.php">Le Forum</a>
                 <a href="contact.php">Contact</a>
             </div>
         </nav>

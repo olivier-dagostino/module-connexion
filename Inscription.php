@@ -24,18 +24,8 @@ if (isset($_POST['env']))
 
 ?>
 
-<!DOCTYPE html>
-<html lang="Fr">
-  <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="style.css">
-      <title>site</title>
-  </head>
-  <body>
-    
   <?php require'header.php';?>
+  
   <div class="form-inscription">
     <form action="" method="post">
       <h1><center>Formulaire d'Inscription</center></h1>
