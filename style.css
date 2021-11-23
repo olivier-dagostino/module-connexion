@@ -81,40 +81,23 @@ nav .main_pages a
     color: white;
 }
  
-nav a:hover 
+/* nav a:hover 
 {
     background: #5A5766
-}
+} */
 
-label
-{
-    display: none;
-}
- 
-@media all and (max-width: 991px)
-{
-    nav
-    {
-        height: 60px;
-    }
- 
-    nav .main_pages 
-    {
-        display: none;
-    }
- 
-    label 
+label 
     {
         width: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-        font-size: 40px;
-        color: white;
+        font-size: 20px;
+        color: rgb(2, 2, 2);
         cursor: pointer;
     }
-}
+
 
 /* fin du nav */
 
@@ -279,7 +262,12 @@ height: 300px;
   
   /*FIN DU MAIN*/
 /* Fin du formulaire de contact */
+/* Formulaire de modification de profil */
 
+#formu-modif-profil {
+    display: flex;
+    justify-content: center;
+}
 /*Footer*/
 .container-f{
     max-width: 1170px;

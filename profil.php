@@ -23,33 +23,28 @@ if (isset($_POST['env']))
     header("Location: profil.php");
 } 
 
-
-
-
-
 ?>
 
-<!DOCTYPE html>
-<html lang="Fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>site</title>
-    <link rel="stylesheet" href="php.css">
-</head>
-    <body>
-    <form name="formu" action="" method="post">
-        <label for ="login">Login</label>
-        <input id="login" name="login" value="<?php echo $login?>" type="text" placeholder="Username"/>
-        <label for ="prenom">Prenom</label>
-        <input name="prenom" value="<?php echo $prenom?>" type="text" placeholder="Prenom" />
-        <label for ="nom">Nom</label>
-        <input name="nom" value="<?php echo $nom?>" type="text" placeholder="Nom" />
-        <label for ="password">Password</label>
-        <input name="password" value="<?php echo $password?>" type="password" placeholder="Votre Mot de Passe"/>
-        <input name="env" type="submit" placeholder="Envoyer">
-    </form>
+<?php require'header.php';?>
+    <h2><center>Modifier votre Profil</center></h2>
+    <div id="formu-modif-profil">
+        
+        <form name="formu" action="" method="post">
+            <label for ="login">Login</label>
+            <input style="font-family: 'Indie Flower', cursive;" id="login" name="login" value="<?php echo $login?>" type="text" placeholder="Username"/>
+
+            <label for ="prenom">Prenom</label>
+            <input style="font-family: 'Indie Flower', cursive;" name="prenom" value="<?php echo $prenom?>" type="text" placeholder="Prenom" />
+
+            <label for ="nom">Nom</label>
+            <input style="font-family: 'Indie Flower', cursive;" name="nom" value="<?php echo $nom?>" type="text" placeholder="Nom" />
+
+            <label for ="password">Password</label>
+            <input style="font-family: 'Indie Flower', cursive;" name="password" value="<?php echo $password?>" type="password" placeholder="Votre Mot de Passe"/>
+            
+            <input style="font-family: 'Indie Flower', cursive;" name="env" type="submit" placeholder="Envoyer">
+        </form>
+    </div>
 
 
     </body>

@@ -11,7 +11,6 @@
 <body>
     <header>
         <nav>
-            <label>☰</label>
             <div class="main_pages">
                 <a href="index.php">Accueil</a>
                 <a href="connexion.php">Espace Membre</a>
