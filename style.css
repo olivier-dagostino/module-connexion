@@ -1,16 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 body {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Indie Flower', cursive; font-size: 20px;
 }
 * {
   margin: 0;
   padding: 0;
 }
+<<<<<<< Updated upstream
 /*Header*/
+=======
+
+/*---------- HEADER ---------- */
+
+>>>>>>> Stashed changes
 header{
-    background-image: url(https://media.istockphoto.com/photos/farm-coffee-plantation-in-brazil-picture-id938716300?k=20&m=938716300&s=612x612&w=0&h=AqwZeHtc5iY5RwCUJrZbWbws_ZmyHha7FzzrhoWXrak=);
+    background-image: url('https://media.istockphoto.com/photos/farm-coffee-plantation-in-brazil-picture-id938716300?k=20&m=938716300&s=612x612&w=0&h=AqwZeHtc5iY5RwCUJrZbWbws_ZmyHha7FzzrhoWXrak=');
     background-repeat: no-repeat;
     background-size: 100% auto;
+    display: flex;
+    flex-direction: column;
+    height: 676px;
+
+   
+}
+
+.header-top
+{
+    display: flex;
+    justify-content: center;
 }
 #container{
     width:400px;
@@ -56,129 +73,242 @@ input[type=submit]:hover {
     color: #53af57;
     border: 1px solid #53af57;
 }
-
-/* Nav */
-
+.header-bottom
+{
+    display: flex;
+    justify-content: center;
+}
 nav 
 {
-    margin: 100px auto;
-    width: 50%;
-    height: 100px;
-    background: #48435C;
+    width: fit-content;
+    background-color: #424558;
+    height: fit-content;
 }
- 
-nav .main_pages 
-{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
- 
-nav .main_pages a 
-{
-    width: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    text-decoration: none;
-    color: white;
-}
- 
-/* nav a:hover 
-{
-    background: #5A5766
-} */
 
-label 
+nav > ul
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li 
+{
+    list-style-type: none;
+}
+
+nav > ul > li
+{
+    float: left;
+    position: relative;
+}
+
+nav > ul::after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.submenu
+{
+    display: none;
+}
+
+nav input[type=checkbox]
+{
+    display: none;
+}
+
+nav label
+{
+    display: none;
+}
+
+
+nav a 
+{
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav > ul > li > a 
+{
+    padding: 0px 0px;
+    color: #fff;
+    margin: 20px 20px 20px 20px;
+}
+
+nav > ul > li > p 
+{
+    padding: 0px 0px;
+    color: #fff;
+    margin: 20px 20px 20px 20px;
+}
+
+nav > ul > li:hover > ul > li > a
+{
+    padding: 20px 20px 20px 20px;
+}
+
+
+
+nav li:hover .submenu
+{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+
+.submenu li a 
+{
+    padding: 15px 30px;
+    font-size: 20px;
+    columns: #222538;
+    width: 142px;
+}
+
+
+.submenu li
+{
+border-bottom: 1px solid #CCC;
+}
+
+.menu-accueil:hover
+{
+    border-top: 5px solid #e44d26;
+    background-color: rgba(228, 77, 38, 0.15);
+}
+
+.menu-espace-membre:hover
+{
+    border-top: 5px solid #0070bb;
+    background-color: rgba(000, 112, 192, 0.15);
+}
+
+.menu-contact:hover
+{
+    border-top: 5px solid #BBB;
+    background-color: rgba(220,220,220,0.15) ;
+}
+
+.menu-accueil .submenu
+{
+    background-color: rgb(230, 100, 40);
+}
+
+.menu-espace-membre .submenu
+{
+    background-color: rgb(000, 160, 240);
+}
+
+.menu-contact .submenu
+{
+    background-color: rgb(250, 215, 100);
+}
+
+.submenu li:hover a
+{
+    color: #eee;
+    font-weight: bold;
+}
+
+.menu-accueil .submenu li:hover
+{
+    background-color: rgb(210, 77, 60);
+}
+
+.menu-espace-membre .submenu li:hover
+{
+    background-color: rgb(000, 115, 200);
+}
+
+.menu-contact .submenu li:hover
+{
+    background-color: rgb(200, 165, 75);
+}
+
+nav input[type=checkbox]:checked ~ ul
+{
+    display: block;
+}
+
+@media screen and (max-width : 780px)
+{
+    .menu-mobile
     {
-        width: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        font-size: 20px;
-        color: rgb(2, 2, 2);
-        cursor: pointer;
+        display: block;
+        color: #fff;
+        background-color: rgba(29, 197, 151, 0.97);
+        text-align: center;
+        padding: 12px 0px;
     }
 
+    nav ul
+    {
+        display: none;
+        text-align: center;
+    }
 
-/* fin du nav */
+    nav ul li, nav ul li a
+    {
+        width: 100%;
+        text-align: center;
+    }
 
-.logoleafcoffee
-{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    nav ul li, nav ul li:hover a
+    {
+        padding: 10px 0px;
+        text-align: center;
+    }
+
+    nav li:hover .submenu
+    {
+        display: block;
+        position: static;
+        text-align: center;
+    }
 }
 
-#logoleafcoffee
+#logo-leafcoffee
 {
-    height: 300px;
     width: 300px;
-    padding: 60px;
-    border-radius: 10% 10% 10% 10%;
-}
-
-form
-{
-    width: 60%;
-    height: auto;
-}
-
-.container 
-{
-    display: flex;
-    justify-content: space-around;
-}
-/* fin  du Header */
-
-/*Main*/
-
-.paragraphe
-{
-text-align: center;
-
-}
-
-.container_img 
-{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#img1
-{
-height: 300px;
-}
-
-#img2
-{
     height: 300px;
-}
-
-#img3
-{
-    height: 300px;
-}
-
-/*Style formulaire inscription*/
-
-.form-inscription
-{
-    display: flex;
-    justify-content: center;
-}
-
-/*Style formulaire connexion*/
-
-.formu
-{
-    display: flex;
-    justify-content: center;
+    position: relative;
+    top: 170px;
     
 }
 
+/*---------- FIN DU HEADER ---------- */
+
+/*---------- MAIN ---------- */
+
+h1
+{
+    text-align: center;
+}
+
+p 
+{
+    text-align: center;
+}
+
+
+.container_img
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.img1
+{
+    width: 300px;
+    height: 300px;
+}
+
+/*---------- FIN DU MAIN ---------- */
 /* Style formulaire contact */
 
 
@@ -290,8 +420,24 @@ height: 300px;
 }
   /* Fin du style du forum */
   
-  /*FIN DU MAIN*/
-/* Fin du formulaire de contact */
+
+/*Style formulaire inscription*/
+
+.form-inscription
+{
+    display: flex;
+    justify-content: center;
+}
+
+/*Style formulaire connexion*/
+
+.formu
+{
+    display: flex;
+    justify-content: center;
+    
+}
+
 /* Formulaire de modification de profil */
 
 #formu-modif-profil {

@@ -58,5 +58,6 @@ td {
 
 th {
     border: 2px solid #333;
+    background-color : yellow;
 }
 </style>

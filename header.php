@@ -10,15 +10,25 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="main_pages">
-                <a href="index.php">Accueil</a>
-                <a href="connexion.php">Espace Membre</a>
-                <a href="forum.php">Le Forum</a>
-                <a href="contact.php">Contact</a>
-            </div>
-        </nav>
-        <div class="logoleafcoffee">
-            <img id="logoleafcoffee" src="logoleafcoffee.png" alt="logoleafcoffee">
-       </div>
+        <div class="header-top">
+            <nav>
+                <label for="menu-mobile" class="menu-mobile">Menu</label> <!-- Case à cocher -->
+                <input type="checkbox" id="menu-mobile" role="button"> <!-- Case à cocher -->
+                <ul>
+                    <li class="menu-accueil"><a href="index.php">Accueil</a></li>
+                    <li class="menu-espace-membre"><p>Espace Membre</p>
+                        <ul class="submenu">
+                            <li><a href="connexion.php">Connexion</a></li>
+                            <li><a href="inscription.php">Inscription</a></li>
+                            <li><a href="#">Livre d'Or</a></li>
+                            <li><a href="#">Le Blog</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-contact"><a href="#">Contact</a></li> 
+                </ul>
+            </nav>
+        </div>
+        <div class="header-bottom">
+            <img id="logo-leafcoffee" src="img/logoleafcoffee.png" alt="logoleafcoffee">
+        </div>
     </header>

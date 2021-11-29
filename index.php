@@ -2,7 +2,7 @@
 
     <main>
         
-        <h1><center>Bienvenue sur mon Site</center></h1><br><br>
+        <h1>Bienvenue</h1><br><br>
         <div class="paragraphe">
             <p>
             Si comme moi, vous êtes intéressé par le café, de la culture de la graine à la boisson, ce forum est fait pour vous. </br> 
@@ -14,17 +14,16 @@
         </div>
         <div class="container_img">
             <div>
-                <img id="img1" src="cafe-turc.png" alt="cafe-turc">
+                <img class="img1" src="img/cafe-turc.png" alt="cafe-turc">
             </div>
             <div>
-                <img id="img2" src="coffee-art.png" alt="coffee-art">
+                <img class="img1" src="img/coffee-art.png" alt="coffee-art">
             </div>
             <div>
-                <img id="img3" src="moulin-cafe.png" alt="moulin-cafe">
+                <img class="img1" src="img/moulin-cafe.png" alt="moulin-cafe">
             </div>
         </div>
 
-
     </main>
 
-    <?php require'footer.php';?>
+<?php require'footer.php';?>
