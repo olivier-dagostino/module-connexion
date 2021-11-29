@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le : lun. 29 nov. 2021 à 07:43
+-- Généré le : lun. 29 nov. 2021 à 10:31
 -- Version du serveur :  5.7.34
 -- Version de PHP : 7.4.21
 
@@ -49,7 +49,9 @@ INSERT INTO `utilisateurs` (`id`, `login`, `prenom`, `nom`, `password`) VALUES
 (13, 'alexdago', 'alex', 'dago', '1234'),
 (14, 'Mel', 'Mélanie', 'Liminana', '1234'),
 (15, 'Mel', 'Mélanie', 'Liminana', '1234'),
-(16, 'Mel', 'Mélanie', 'Liminana', '1234');
+(16, 'Mel', 'Mélanie', 'Liminana', '1234'),
+(17, 'MELDAR', 'Méline', 'DARCY', '12345'),
+(18, 'Nico1', 'Nicolas', 'fanjas', '12345');
 
 --
 -- Index pour les tables déchargées
@@ -69,7 +71,7 @@ ALTER TABLE `utilisateurs`
 -- AUTO_INCREMENT pour la table `utilisateurs`
 --
 ALTER TABLE `utilisateurs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -1,7 +1,7 @@
 <?php require 'header.php'?>
 <?php
 
-            $bdd = mysqli_connect("localhost:3336","olivier","moduleconnexion","olivier-d-agostino_moduleconnexion");  // je me connecte a la base de données
+            $bdd = mysqli_connect("localhost:8889","root","root","moduleconnexion");  // je me connecte a la base de données
 
 
             $req= mysqli_query($bdd,"SELECT * FROM utilisateurs");  // Execution de la requette

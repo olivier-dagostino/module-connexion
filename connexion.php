@@ -1,7 +1,7 @@
 <?php require'header.php';?>
 <?php
 
-$connect= mysqli_connect("localhost:3336","olivier","moduleconnexion","olivier-d-agostino_moduleconnexion"); // je me connecte a la bdd
+$connect= mysqli_connect("localhost:8889","root","root","moduleconnexion"); // je me connecte a la bdd
 
 
 if(isset($_POST['login']) && isset($_POST['password'])){ // SI c'est deux $Post sont défini
@@ -28,7 +28,7 @@ if(isset($_POST['login']) && isset($_POST['password'])){ // SI c'est deux $Post 
 
             }
          }else {
-             echo "pas bon";
+             echo "Erreur";
          }
      }
 
