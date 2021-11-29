@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+body {
+    font-family: 'Indie Flower', cursive; font-size: 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+<<<<<<< Updated upstream
+/*Header*/
+=======
+
+/*---------- HEADER ---------- */
+
+>>>>>>> Stashed changes
+header{
+    background-image: url('https://media.istockphoto.com/photos/farm-coffee-plantation-in-brazil-picture-id938716300?k=20&m=938716300&s=612x612&w=0&h=AqwZeHtc5iY5RwCUJrZbWbws_ZmyHha7FzzrhoWXrak=');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: flex;
+    flex-direction: column;
+    height: 676px;
+
+   
+}
+
+.header-top
+{
+    display: flex;
+    justify-content: center;
+}
+#container{
+    width:400px;
+    margin:0 auto;
+    margin-top:10%;
+}
+/* Bordered form */
+form {
+    width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#container h1{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+input[type=submit] {
+    background-color: #4bbeb8;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: #53af57;
+    border: 1px solid #53af57;
+}
+.header-bottom
+{
+    display: flex;
+    justify-content: center;
+}
+nav 
+{
+    width: fit-content;
+    background-color: #424558;
+    height: fit-content;
+}
+
+nav > ul
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li 
+{
+    list-style-type: none;
+}
+
+nav > ul > li
+{
+    float: left;
+    position: relative;
+}
+
+nav > ul::after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.submenu
+{
+    display: none;
+}
+
+nav input[type=checkbox]
+{
+    display: none;
+}
+
+nav label
+{
+    display: none;
+}
+
+
+nav a 
+{
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav > ul > li > a 
+{
+    padding: 0px 0px;
+    color: #fff;
+    margin: 20px 20px 20px 20px;
+}
+
+nav > ul > li > p 
+{
+    padding: 0px 0px;
+    color: #fff;
+    margin: 20px 20px 20px 20px;
+}
+
+nav > ul > li:hover > ul > li > a
+{
+    padding: 20px 20px 20px 20px;
+}
+
+
+
+nav li:hover .submenu
+{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+
+.submenu li a 
+{
+    padding: 15px 30px;
+    font-size: 20px;
+    columns: #222538;
+    width: 142px;
+}
+
+
+.submenu li
+{
+border-bottom: 1px solid #CCC;
+}
+
+.menu-accueil:hover
+{
+    border-top: 5px solid #e44d26;
+    background-color: rgba(228, 77, 38, 0.15);
+}
+
+.menu-espace-membre:hover
+{
+    border-top: 5px solid #0070bb;
+    background-color: rgba(000, 112, 192, 0.15);
+}
+
+.menu-contact:hover
+{
+    border-top: 5px solid #BBB;
+    background-color: rgba(220,220,220,0.15) ;
+}
+
+.menu-accueil .submenu
+{
+    background-color: rgb(230, 100, 40);
+}
+
+.menu-espace-membre .submenu
+{
+    background-color: rgb(000, 160, 240);
+}
+
+.menu-contact .submenu
+{
+    background-color: rgb(250, 215, 100);
+}
+
+.submenu li:hover a
+{
+    color: #eee;
+    font-weight: bold;
+}
+
+.menu-accueil .submenu li:hover
+{
+    background-color: rgb(210, 77, 60);
+}
+
+.menu-espace-membre .submenu li:hover
+{
+    background-color: rgb(000, 115, 200);
+}
+
+.menu-contact .submenu li:hover
+{
+    background-color: rgb(200, 165, 75);
+}
+
+nav input[type=checkbox]:checked ~ ul
+{
+    display: block;
+}
+
+@media screen and (max-width : 780px)
+{
+    .menu-mobile
+    {
+        display: block;
+        color: #fff;
+        background-color: rgba(29, 197, 151, 0.97);
+        text-align: center;
+        padding: 12px 0px;
+    }
+
+    nav ul
+    {
+        display: none;
+        text-align: center;
+    }
+
+    nav ul li, nav ul li a
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li, nav ul li:hover a
+    {
+        padding: 10px 0px;
+        text-align: center;
+    }
+
+    nav li:hover .submenu
+    {
+        display: block;
+        position: static;
+        text-align: center;
+    }
+}
+
+#logo-leafcoffee
+{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: 170px;
+    
+}
+
+/*---------- FIN DU HEADER ---------- */
+
+/*---------- MAIN ---------- */
+
+h1
+{
+    text-align: center;
+}
+
+p 
+{
+    text-align: center;
+}
+
+
+.container_img
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.img1
+{
+    width: 300px;
+    height: 300px;
+}
+
+/*---------- FIN DU MAIN ---------- */
+/* Style formulaire contact */
+
+
+#abc {
+    background-color: rgb(19, 17, 17);
+    font-size: 12px;
+  }
+  
+  #abc, button, input {
+    
+    font-weight: 700;
+    letter-spacing: 1.4px;
+  }
+  
+  .background {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+  } 
+  
+  .container {
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .contact{
+      font-size: 30px;
+      margin-left: 30%;
+  }
+  .screen-body-item {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .app-form-group.message {
+    margin-top: 40px;
+  }
+  
+  .app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+  }
+  
+  .app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+  }
+  
+  .app-form-control::placeholder {
+    color: #666;
+  }
+  
+  .app-form-control:focus {
+    border-bottom-color: #ddd;
+  }
+  
+  .app-form-button {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .app-form-button:hover {
+    color: #e5e90f;
+  }
+
+
+  /* Style du forum */
+.part1 {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.part1-1{
+  display: flex;
+  justify-content: space-around;
+}
+
+.part1-1-2{
+  padding-top: 150px;
+}
+
+.part1-2{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+  /* Fin du style du forum */
+  
+
+/*Style formulaire inscription*/
+
+.form-inscription
+{
+    display: flex;
+    justify-content: center;
+}
+
+/*Style formulaire connexion*/
+
+.formu
+{
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* Formulaire de modification de profil */
+
+#formu-modif-profil {
+    display: flex;
+    justify-content: center;
+}
+/*Footer*/
+.container-f{
+    max-width: 1170px;
+    margin: auto;
+    text-align: center; 
+    width: 100%;
+  }
+  
+  .row{
+    display: flex;
+    justify-content: space-between;
+   
+  }
+  
+  
+  .footer{
+    background-color: #24262b;
+    padding: 20px 0;
+    margin: auto;
+    
+    
+  }
+  
+  .footer1{
+    width: 25%;
+    padding: 0 15px;
+    
+  }
+  
+  .footer1 h4{
+  
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+  
+  }
+  
+  .footer1 h4::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -15px;
+    background-color: #8894b8;
+    height: 2px;
+    box-sizing: border-box;
+    width: 200px;
+    margin-left: 50px;
+  }
+  
+  
+  
+  .footer1 .s-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  
+  .footer1 .s-links a:hover{
+    color: #193270;
+    background-color: #ffffff;
+  
+  }
+  
+  .pfooter{
+  
+    color: white;
+    text-align: left;
+  }
+  
+  .pfooter1{
+    color: white;
+  }
+  
+  /*FIN FOOTER*/
